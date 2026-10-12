@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <main id="game-container">
+
+        <!-- header -->
+        <header>
+            <h1>Snake Game</h1>
+            <p>Eat, Grow and Don't Crash !!</p>
+        </header>
+
+        <!-- score display area -->
+        <section class="display-score">
+            <div class="score">
+                <p>Score : <span id="current-score">0</span></p>
+            </div>  
+            <div class="score">
+                <p>Best Score : <span id="best-score">0</span></p>
+            </div>      
+        </section>
+
+        <!-- game board -->
+        <section class="game-board">
+            <canvas id="game"></canvas>
+        </section>
+
+        <!-- text-msg -->
+        <p id="msg">Press Start to Play</p>
+
+        <!-- control buttons -->
+        <div id="controls">
+            <button id="start" class="btn">Start !</button>
+            <button id="pause" class="btn">Pause !</button>
+            <button id="restart" class="btn">Restart !</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
