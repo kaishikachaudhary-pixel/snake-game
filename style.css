@@ -1,8 +1,16 @@
+
 :root {
-    --blue: #DC95FF;
-    --cream: #FFBEFB;
-    --red: #8C56D4;
-    --brown: #FFF4BF;
+    --blue: #542B36;
+    --cream: #141414;
+    --red: #E77967;
+    --brown: #F1E8D8;
+
+    --board: #20251F;
+    --snake: #A8C686;
+    --snake-head: #D0E6AD;
+    --text-muted: #B9B2A7;
+    --border: #393D34;
+    --button-hover: #75404A;
 }
 
 * {
@@ -28,7 +36,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--blue);
-    color: white;
+    color: var(--brown);
     height: 80px;
     width: 100%;
     gap: 4px;
@@ -40,6 +48,7 @@ header h1 {
 
 header p {
     font-size: 14px;
+    color: #D8C1C4;
 }
 
 .display-score {
@@ -51,13 +60,14 @@ header p {
 }
 
 .score {
-    background-color: var(--blue);
+    background-color: #29221F;
     padding: 12px;
     border-radius: 10px;
-    color: white;
+    color: var(--brown);
     width: 250px;
     font-size: 16px;
     font-weight: 600;
+    border: 1px solid #493832;
 }
 
 .game-board {
@@ -72,8 +82,8 @@ header p {
     width: 700px;
     height: 500px;
     max-width: 100%;
-    background-color: var(--brown);
-    border: 2px solid var(--red);
+    background-color: var(--board);
+    border: 2px solid #526044;
     border-radius: 6px;
 }
 
@@ -86,11 +96,12 @@ header p {
     margin: 10px 0;
     font-size: 20px;
     font-weight: 600;
+    color: var(--red);
 }
 
 #start-again {
     background-color: var(--red);
-    color: white;
+    color: #201513;
     padding: 10px 18px;
     border: none;
     border-radius: 5px;
@@ -108,10 +119,10 @@ header p {
 }
 
 .btn {
-    background-color: var(--blue);
-    color: white;
+    background-color: #29221F;
+    color: var(--brown);
     padding: 10px 20px;
-    border: none;
+    border: 1px solid #493832;
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
@@ -120,8 +131,10 @@ header p {
 }
 
 .btn:hover {
-    background-color: var(--brown);
+    background-color: var(--button-hover);
 }
+
 #start-again:hover {
-    background-color: var(--brown);
+    background-color: var(--button-hover);
+    color: var(--brown);
 }
